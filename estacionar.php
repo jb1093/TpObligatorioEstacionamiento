@@ -58,7 +58,7 @@
   <input type="text" name="txtPatente" id="txtPatente">
   <button type="button" id="btn1">Boton1</button>
   <button type="button" id="btn2">Boton2</button>
-  <
+  
 </div>
 
 <div class="container">
@@ -75,7 +75,7 @@
           <li>Email support</li>
           <li>Help center access</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+        <!--<button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>-->
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -90,7 +90,7 @@
           <li>Priority email support</li>
           <li>Help center access</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+        <!--<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>-->
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -105,7 +105,7 @@
           <li>Phone and email support</li>
           <li>Help center access</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+        <!--<button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>-->
       </div>
     </div>
   </div>
