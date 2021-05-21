@@ -55,7 +55,10 @@
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4">ApparCar</h1>
   <!--<p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>-->
-  <input type="text" name="txtPatente" id="txtPatente">>
+  <input type="text" name="txtPatente" id="txtPatente">
+  <button type="button" id="btn1">Boton1</button>
+  <button type="button" id="btn2">Boton2</button>
+  <
 </div>
 
 <div class="container">
