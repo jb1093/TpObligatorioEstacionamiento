@@ -6,13 +6,18 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>ApparCar</title>
+  <!--  <title>ApparCar</title>
+    <link  rel="icon"   href="Printer1.ico" type="image/png" />-->
+    <?php 
+    include_once("titulo.php");
 
+    ?> 
+    
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/pricing/">
 
-    <link  rel="icon"   href="Printer1.ico" type="image/png" />
+    
 
-    <!-- Bootstrap core CSS -->
+<!-- Bootstrap core CSS -->
 <!--link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
@@ -42,7 +47,7 @@
   <body>
     
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+  <h5 class="my-0 mr-md-auto font-weight-normal">INICIO</h5>
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="#">Features</a>
     <a class="p-2 text-dark" href="#">Enterprise</a>
@@ -52,45 +57,47 @@
   <a class="btn btn-outline-primary" href="#">Sign up</a>
 </div>
 
+
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4">ApparCar</h1>
-  <!--<p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>-->
-  <input type="text" name="txtPatente" id="txtPatente">
-  <button type="button" id="btn1">Boton1</button>
-  <button type="button" id="btn2">Boton2</button>
+  <p class="lead">Precio por minuto $2,5</p>
+  <!--<input type="text" name="txtPatente" id="txtPatente" placeholder="Ingrese Patente">-->
+  <a href="entrada.php"><input type="button" name="btnEntrada" value="ENTRADA" > </a>
+  <a href="salida.php"><input type="button" name="btnSalida" value="SALIDA" > </a>
   
 </div>
 
-<div class="container">
+
+<!--<div class="container">
   <div class="card-deck mb-3 text-center">
     <div class="card mb-4 shadow-sm">
       <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Free</h4>
+        <h4 class="my-0 font-weight-normal">Precio</h4>
       </div>
       <div class="card-body">
-        <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+        <h1 class="card-title pricing-card-title">$2,5 <small class="text-muted">/ minuto</small></h1>
         <ul class="list-unstyled mt-3 mb-4">
-          <li>10 users included</li>
-          <li>2 GB of storage</li>
+          <li>Seguridad para vos y tu coche</li>
+          <li>El mejor precio de la zona</li>
           <li>Email support</li>
           <li>Help center access</li>
         </ul>
-        <!--<button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>-->
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
       <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Pro</h4>
+        <h4 class="my-0 font-weight-normal">Precio</h4>
       </div>
       <div class="card-body">
-        <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+        <h1 class="card-title pricing-card-title">$2,5 <small class="text-muted">/ minuto</small></h1>
         <ul class="list-unstyled mt-3 mb-4">
-          <li>20 users included</li>
-          <li>10 GB of storage</li>
+          <li>Seguridad para vos y tu coche</li>
+          <li>El mejor precio de la zona</li>
           <li>Priority email support</li>
           <li>Help center access</li>
         </ul>
-        <!--<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>-->
+        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -105,10 +112,10 @@
           <li>Phone and email support</li>
           <li>Help center access</li>
         </ul>
-        <!--<button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>-->
+        <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
       </div>
     </div>
-  </div>
+  </div>-->
 
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
