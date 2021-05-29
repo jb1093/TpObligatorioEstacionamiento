@@ -44,7 +44,7 @@
   <body>
     
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">Nombre de la aplicacion</a>
+  <a class="navbar-brand" href="#">ApparCar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -82,8 +82,8 @@
   <div class="jumbotron">
     <div class="container">
       <h1 class="display-3">Bienvenido</h1>
-      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      <p>Puedes ingresar en el botón parking para ingresar o egresar un vehiculo </p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Parking &raquo;</a></p>
     </div>
   </div>
 
