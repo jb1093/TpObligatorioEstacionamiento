@@ -83,7 +83,7 @@
     <div class="container">
       <h1 class="display-3">Bienvenido</h1>
       <p>Puedes ingresar en el botón parking para ingresar o egresar un vehiculo </p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Parking &raquo;</a></p>
+      <p><a class="btn btn-primary btn-lg" href="estacionar.php" role="button">Parking &raquo;</a></p>
     </div>
   </div>
 
