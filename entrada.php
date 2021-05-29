@@ -58,7 +58,7 @@
     <p class="lead">Precio por minuto $2,5</p>
     <input type="text" name="txtPatente" id="txtPatente" placeholder="Ingrese Patente">
     <input type="submit" name="btnEntrada" > 
-    <a href="estacionamiento.php"><input type="button" name="btnVolver" value="Volver"></a>
+    <a href="estacionar.php"><input type="button" name="btnVolver" value="Volver"></a>
 
     
   </div>
