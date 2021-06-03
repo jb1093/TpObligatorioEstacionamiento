@@ -24,13 +24,14 @@
 	color: #ffff;
 	font-weight: bold;
 }
-.btn-primary {
+.btn {
 	background-color: #B693E3; 
 	border-color: #ffff;
 }
-.btn-primary:hover{
+.btn:hover{
 
 	background-color: #904AE9;
 	border-color: #6805E7;
 
 }
+
