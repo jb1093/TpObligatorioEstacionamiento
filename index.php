@@ -40,10 +40,11 @@
     
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
+    <link href="css/index-css.css" rel="stylesheet">
   </head>
   <body>
     
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top " >
   <a class="navbar-brand" href="#">ApparCar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -80,9 +81,9 @@
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
-    <div class="container">
+    <div class="container1">
       <h1 class="display-3">Bienvenido</h1>
-      <p>Puedes ingresar en el botón parking para ingresar o egresar un vehiculo </p>
+      <p class="dato1">Puedes ingresar en el botón parking para ingresar o egresar un vehiculo </p>
       <p><a class="btn btn-primary btn-lg" href="estacionar.php" role="button">Parking &raquo;</a></p>
     </div>
   </div>
