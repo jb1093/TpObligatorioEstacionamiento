@@ -92,17 +92,17 @@
     <!-- Example row of columns -->
     <div class="row">
       <div class="col-md-4">
-        
+        <h3>SEGURIDAD</h3>
         <p>Guardá tu vehículo con seguridad y tranquilidad.</p>
         <p><a class="btn btn-secondary" href="#" role="button">Ver más &raquo;</a></p>
       </div>
       <div class="col-md-4">
-        
+        <h3>UBICACIÓN</h3> 
         <p>Conocé los estacionamientos disponibles en Ciudad Autónoma de Buenos Aires, Gran Buenos Aires e interior del país, y guardá tu auto con tranquilidad y seguridad.</p>
         <p><a class="btn btn-secondary" href="#" role="button">Más detalles &raquo;</a></p>
       </div>
       <div class="col-md-4">
-        
+         <h3>NOSOTROS</h3>
         <p>Más de 100 años lideres en la empresa.</p>
         <p><a class="btn btn-secondary" href="#" role="button">Conocenos &raquo;</a></p>
       </div>
