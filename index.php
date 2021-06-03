@@ -87,7 +87,7 @@
       <p><a class="btn btn-primary btn-lg" href="estacionar.php" role="button">Parking &raquo;</a></p>
     </div>
   </div>
-
+  <img class="logo" src="./img/logo-png.png">
   <div class="container">
     <!-- Example row of columns -->
     <div class="row">
