@@ -1,11 +1,13 @@
 $(function(){
 			  var patentes = [ 
 
-			  
-
-			   "hyt789","edn254","ttt555","ttt555","ttt555","ñññ555","ñññ555","ñññ555","kkk222","kkk222","rrr777","jjj666","jjj666","klx235","klx235","klx235","klx235","klx235","klx235","klx235","qqq333","abc123","qwe321",
 
 
+
+			   {value: "asd345" , data: " 2015-09-16 00:51:17 " }, 
+			   {value: "ark345" , data: " 2015-09-16 00:51:17 " }, 
+
+			   
 			  ];
 			  
 			  // setup autocomplete function pulling from patentes[] array

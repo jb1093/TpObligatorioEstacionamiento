@@ -6,6 +6,10 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="js/funcionAutoCompletar.js"></script>
    <?php 
     include_once("titulo.php");
 
@@ -60,7 +64,7 @@
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4">SALIDA de ApparCar</h1>
   <p class="lead">Precio por minuto $2,5</p>
-  <input type="text" name="txtPatente" id="txtPatente" placeholder="Ingrese Patente">
+  <input type="text" name="txtPatente" id="autocomplete" placeholder="Ingrese Patente">
   <input type="submit" name="btnSalida" > 
   <a href="estacionar.php"><input type="button" name="btnVolver" value="Volver"></a>
 

@@ -1,6 +1,6 @@
 <?php
-include "funciones.php";
-date_default_timezone_set("America/Argentina/Buenos_Aires");
+include_once "estacionamiento.php";
+//date_default_timezone_set("America/Argentina/Buenos_Aires");
 $entrada=$_POST['txtPatente'];
 
 if ($entrada!="") 
@@ -10,7 +10,9 @@ if ($entrada!="")
 	//funcion para guardar las patentes cuando ingresan al estacionamiento
 	guardar($registro , "patentes.txt");
 	echo "Registro guardado exitosamente!";
-
+	estacionamiento::CrearTablaEstacionamiento();
+estacionamiento::CrearTablaCobrados();
+	include "generarautocompletar.php";
 }
 else
 {

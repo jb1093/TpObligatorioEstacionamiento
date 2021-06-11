@@ -1,9 +1,14 @@
-$(function(){
+<?php
+include_once "estacionamiento.php";
+
+//$ListadoPatentes="  \"asd345\" , \"fff666\" ,\"julieta\"  ";
+$ListadoPatentes=estacionamiento::retornarListadoAutocompletar();
+$textoDelArchivoJS="$(function(){
 			  var patentes = [ 
 
 			  
 
-			   "hyt789","edn254","ttt555","ttt555","ttt555","ñññ555","ñññ555","ñññ555","kkk222","kkk222","rrr777","jjj666","jjj666","klx235","klx235","klx235","klx235","klx235","klx235","klx235","qqq333","abc123","qwe321",
+			   $ListadoPatentes
 
 
 			  ];
@@ -20,4 +25,29 @@ $(function(){
 			  });
 			  
 
-			});
+			});";
+$archivoJS=fopen("js/funcionAutocompletar.js","w");
+
+fwrite($archivoJS, $textoDelArchivoJS);
+
+fclose($archivoJS);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>

@@ -1,5 +1,5 @@
 <?php
-include "funciones.php";
+include "estacionamiento.php";
 
 
 $salida=$_POST['txtPatente'];
@@ -15,18 +15,12 @@ foreach ($patenteLista as $dato ) //el foreach es como el mientras pero de los a
 	{
 		$guardado="guardado";
 
-		date_default_timezone_set("America/Argentina/Buenos_Aires");
+		
 		$fechaEntrada=$dato[1];
 		$fechaSalida=date("Y-m-d H:i");
 		$minutos=DiferenciaDeFechas($fechaEntrada, $fechaSalida, "%i");
 		$precio=$minutos*2.50;
-		
-		echo "<h3>COMPROBANTE</h3>";
-		echo "Patente: " .$salida."<br>";
-		echo "Fecha de ingreso: ".$fechaEntrada."<br>Fecha de salida: ".$fechaSalida."<br>";
-		echo "Tiempo de guardado: ". $minutos. "' <br>";
-		echo "Precio a pagar($2,50/minuto): $". $precio. "<br><br>";
-		echo "FIN***";
+		mostrar ($fechaEntrada , $fechaSalida , $salida, $precio, $minutos);
 
 		
 		guardar("\n".$salida."=>".quitarCaracter($fechaEntrada)."=>".$fechaSalida."=>". $precio,"cobrados.txt");
@@ -54,7 +48,8 @@ else
 		}	
 
 	}
-
+	estacionamiento::CrearTablaEstacionamiento();
+	estacionamiento::CrearTablaCobrados();
 
 }
 

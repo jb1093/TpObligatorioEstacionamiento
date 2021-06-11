@@ -61,6 +61,22 @@ function crearArchivo($nombreDeArchivo) //crea un archivo en blanco
 
 }
 
+function mostrar ($fechaE , $fechaS , $patente , $valor, $tiempo)
+{
+
+		
+		
+		
+		echo "<h3>COMPROBANTE</h3>";
+		echo "Patente: " .$patente."<br>";
+		echo "Fecha de ingreso: ".$fechaE."<br>Fecha de salida: ".$fechaS."<br>";
+		echo "Tiempo de guardado: ". $tiempo. "' <br>";
+		echo "Precio a pagar($2,50/minuto): $". $valor. "<br><br>";
+		echo "FIN***";
+
+		
+		
+}
 
 
 
@@ -86,5 +102,6 @@ function crearArchivo($nombreDeArchivo) //crea un archivo en blanco
 
 
 
+date_default_timezone_set("America/Argentina/Buenos_Aires");
 
 ?>

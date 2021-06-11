@@ -16,6 +16,14 @@ class estacionamiento//metodo estático porque de la clase tengo una funcionalid
 		return $listaDeAutosLeida;
 
 	}
+	public static function retornarListadoAutocompletar(){
+		$arrayPatente=estacionamiento::leer ();
+		$listadoRetorno="";
+		foreach ($arrayPatente as $datos ) {
+			$listadoRetorno.="\"$datos[0]\",";
+		}
+		return $listadoRetorno;
+	}
 
 	public static function CrearTablaEstacionamiento ()
 	{
