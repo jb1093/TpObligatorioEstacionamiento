@@ -61,6 +61,7 @@
     <h1 class="display-4">ENTRADA a ApparCar</h1>
     <p class="lead">Precio por minuto $2,5</p>
     <input type="text" name="txtPatente" id="txtPatente" placeholder="Ingrese Patente">
+    <input type="checkbox" name="gnc" value="gnc">GNC</input>
     <input type="submit" name="btnEntrada" > 
     <a href="estacionar.php"><input type="button" name="btnVolver" value="Volver"></a>
 

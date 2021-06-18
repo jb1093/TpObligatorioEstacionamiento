@@ -5,7 +5,7 @@ include "estacionamiento.php";
 $salida=$_POST['txtPatente'];
 
 //$patenteLista=array();
-$patenteLista=leerArchivo("patentes.txt");//aca va la funcion que busca el auto estacionado y lo vuelca en un array
+$patenteLista=leerArchivo("patentes.txt"); //aca va la funcion que busca el auto estacionado y lo vuelca en un array
 
 $guardado= "no guardado";
 

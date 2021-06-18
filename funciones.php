@@ -61,7 +61,7 @@ function crearArchivo($nombreDeArchivo) //crea un archivo en blanco
 
 }
 
-function mostrar ($fechaE , $fechaS , $patente , $valor, $tiempo)
+function mostrar ($fechaE , $fechaS , $patente , $valor, $tiempo)//ticket 
 {
 
 		
