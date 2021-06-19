@@ -20,6 +20,7 @@ else
 	$valorgnc="no gnc";
 	
 }
+$vehiculo=$_POST['vehiculo'];
 
 if ($entrada!="") 
 {
@@ -31,8 +32,9 @@ if ($entrada!="")
 	{
 		$guardaDato="SIN GNC";
 	}
+
 	$hora=date("Y-m-d H:i");
-	$registro="\n".$entrada."=>".$hora."=>".$guardaDato;
+	$registro="\n".$entrada."=>".$hora."=>".$guardaDato."=>".$vehiculo."=>x";
 	//funcion para guardar las patentes cuando ingresan al estacionamiento
 	guardar($registro , "patentes.txt");
 	echo "Registro guardado exitosamente!";

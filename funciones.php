@@ -71,7 +71,7 @@ function mostrar ($fechaE , $fechaS , $patente , $valor, $tiempo)//ticket
 		echo "Patente: " .$patente."<br>";
 		echo "Fecha de ingreso: ".$fechaE."<br>Fecha de salida: ".$fechaS."<br>";
 		echo "Tiempo de guardado: ". $tiempo. "' <br>";
-		echo "Precio a pagar($2,50/minuto): $". $valor. "<br><br>";
+		echo "Precio a pagar(minuto): $". $valor. "<br><br>";
 		echo "FIN***";
 
 		
