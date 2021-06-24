@@ -1,14 +1,97 @@
 <?php
 
-function DiferenciaDeFechas($fecha1 , $fecha2 , $formato = '%i' )
+function DiferenciaDeFechas($fecha1 , $fecha2)
 {
     $fechaHora1 = date_create($fecha1);
     $fechaHora2 = date_create($fecha2);
    
     $interval = date_diff($fechaHora1, $fechaHora2);
    
-    return $interval->format($formato);
+    return $interval->format("%a")*1440 + $interval->format("%H")*60 + $interval->format("%i") ;
 }
+
+function cobrar($automovil , $tiempo){
+	switch ($automovil) 
+	{
+		case 'moto':
+			if($tiempo<=30) // - media hora
+			{
+				$precio=$tiempo*3;	
+			} 
+			else
+			{
+				if($tiempo<=480) //- 8horas
+				{
+					$precio=$tiempo*2.50; 
+				}
+				else
+				{
+					if($tiempo<=720) // -12 horas
+					{
+						$precio=$tiempo*2.25; 
+					}
+					else // estadía + 12 horas
+					{
+						$precio=2000; 
+					}
+				}
+			}
+			
+			break;
+		case 'auto':
+			if($tiempo<=30) // - media hora
+			{
+				$precio=$tiempo*3.3;	
+			} 
+			else
+			{
+				if($tiempo<=480) // - 8 horas
+				{
+					$precio=$tiempo*2.75; 
+				}
+				else
+				{
+					if($tiempo<=720) // - 12 horas
+					{
+						$precio=$tiempo*2.475; 
+					}
+					else // estadía + 12 horas
+					{
+						$precio=2200; 
+					}
+				}
+			}
+			break;
+		case 'camioneta':
+			if($tiempo<=30) // - media hora
+			{
+				$precio=$tiempo*3.6;	
+			} 
+			else
+			{
+				if($tiempo<=480) // - 8 horas
+				{
+					$precio=$tiempo*3; 
+				}
+				else
+				{
+					if($tiempo<=720) // - 12 horas
+					{
+						$precio=$tiempo*2.7; 
+					}
+					else // estadía + 12 horas
+					{
+						$precio=2400; 
+					}
+				}
+			}
+			break;
+	}
+
+	return $precio; 
+
+}
+
 //la funcion guarda sirve para guardar datos que ingresan como los que salen 
 function guardar($renglon, $nombreDeArchivo)
 {

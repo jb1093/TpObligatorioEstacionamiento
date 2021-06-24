@@ -18,22 +18,12 @@ foreach ($patenteLista as $dato ) //el foreach es como el mientras pero de los a
 		
 		$fechaEntrada=$dato[1];
 		$fechaSalida=date("Y-m-d H:i");
-		$minutos=DiferenciaDeFechas($fechaEntrada, $fechaSalida, "%i");
+		$minutos=DiferenciaDeFechas($fechaEntrada, $fechaSalida);
 		$vehiculo=$dato[3];
 		$gas=$dato[2];
 
-			switch ($vehiculo) 
-			{
-				case 'moto':
-					$precio=$minutos*2.50;
-					break;
-				case 'auto':
-					$precio=$minutos*2.75;
-					break;
-				case 'camioneta':
-					$precio=$minutos*3;
-					break;
-			}
+		$precio=cobrar($vehiculo, $minutos);
+
 		mostrar ($fechaEntrada , $fechaSalida , $salida, $precio, $minutos);
 
 		
@@ -44,7 +34,6 @@ foreach ($patenteLista as $dato ) //el foreach es como el mientras pero de los a
 
 }
 
-var_dump($minutos);
 
 if ($guardado=="no guardado") 
 {
