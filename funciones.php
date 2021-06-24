@@ -62,19 +62,13 @@ function crearArchivo($nombreDeArchivo) //crea un archivo en blanco
 }
 
 function mostrar ($fechaE , $fechaS , $patente , $valor, $tiempo)//ticket 
-{
-
-		
-		
-		
+{	
 		echo "<h3>COMPROBANTE</h3>";
 		echo "Patente: " .$patente."<br>";
 		echo "Fecha de ingreso: ".$fechaE."<br>Fecha de salida: ".$fechaS."<br>";
 		echo "Tiempo de guardado: ". $tiempo. "' <br>";
-		echo "Precio a pagar(minuto): $". $valor. "<br><br>";
+		echo "Precio a pagar: $". $valor. "<br><br>";
 		echo "FIN***";
-
-		
 		
 }
 

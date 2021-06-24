@@ -35,8 +35,14 @@ class estacionamiento//metodo estático porque de la clase tengo una funcionalid
 		$tablaHTML.="<th>";
 		$tablaHTML.=" Ingreso";
 		$tablaHTML.="</th>";
+		$tablaHTML.="<th>";
+		$tablaHTML.=" GNC";
+		$tablaHTML.="</th>";
+		$tablaHTML.="<th>";
+		$tablaHTML.=" Tipo";
+		$tablaHTML.="</th>";
 		foreach ($listado as $auto) {
-			$tablaHTML.="<tr><td>$auto[0]</td><td>$auto[1]</td></tr>";
+			$tablaHTML.="<tr><td>$auto[0]</td><td>$auto[1]</td><td>$auto[2]</td><td>$auto[3]</td></tr>";
 
 		}
 
@@ -89,8 +95,14 @@ class estacionamiento//metodo estático porque de la clase tengo una funcionalid
 		$tablaHTML.="<th>";
 		$tablaHTML.=" Precio";
 		$tablaHTML.="</th>";
+		$tablaHTML.="<th>";
+		$tablaHTML.=" GNC";
+		$tablaHTML.="</th>";
+		$tablaHTML.="<th>";
+		$tablaHTML.=" Tipo";
+		$tablaHTML.="</th>";
 		foreach ($listado as $auto) {
-			$tablaHTML.="<tr><td>$auto[0]</td><td>$auto[1]</td><td>$auto[2]</td><td>$auto[3]</td></tr>";
+			$tablaHTML.="<tr><td>$auto[0]</td><td>$auto[1]</td><td>$auto[2]</td><td>$auto[3]</td><td>$auto[4]</td><td>$auto[5]</td></tr>";
 
 		}
 

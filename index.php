@@ -39,7 +39,7 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
+    <link href="css/jumbotron.css" rel="stylesheet">
     <link href="css/index-css.css" rel="stylesheet">
   </head>
   <body>

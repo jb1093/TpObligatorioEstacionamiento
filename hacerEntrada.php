@@ -20,9 +20,18 @@ else
 	$valorgnc="no gnc";
 	
 }
-$vehiculo=$_POST['vehiculo'];
+if(isset($_POST['vehiculo']))
+{
+	$vehiculo=$_POST['vehiculo'];
+}
+else
+{
+	$vehiculo="";
+	
+}
 
-if ($entrada!="") 
+//--------------------------------------------------------------------
+if ($entrada!="" && !($vehiculo=="moto" && $valorgnc=="gnc")) 
 {
 	if($valorgnc=="gnc")
 	{
@@ -35,12 +44,14 @@ if ($entrada!="")
 
 	$hora=date("Y-m-d H:i");
 	$registro="\n".$entrada."=>".$hora."=>".$guardaDato."=>".$vehiculo."=>x";
+	
 	//funcion para guardar las patentes cuando ingresan al estacionamiento
 	guardar($registro , "patentes.txt");
 	echo "Registro guardado exitosamente!";
 	estacionamiento::CrearTablaEstacionamiento();
 	estacionamiento::CrearTablaCobrados();
 	include "generarautocompletar.php";
+	
 }
 else
 {

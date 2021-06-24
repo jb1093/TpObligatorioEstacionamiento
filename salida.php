@@ -44,7 +44,7 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
+    <link href="css/pricing.css" rel="stylesheet">
     <link href="css/estacionar-css.css" rel="stylesheet">
   </head>
   <body>
@@ -57,7 +57,7 @@
     <a class="p-2" href="#">Support</a>
     <a class="p-2" href="#">Pricing</a>
   </nav>
-  <a class="btn btn-outline-primary" href="#">Sign up</a>
+  <a class="btn btn-outline-primary" href="login.php">Cerrar</a>
 </div>
 
 <form action="hacerSalida.php" method="post">

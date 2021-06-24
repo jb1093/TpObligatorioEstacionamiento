@@ -28,10 +28,10 @@ foreach ($patenteLista as $dato ) //el foreach es como el mientras pero de los a
 					$precio=$minutos*2.50;
 					break;
 				case 'auto':
-					$precio=$minutos*5;
+					$precio=$minutos*2.75;
 					break;
 				case 'camioneta':
-					$precio=$minutos*10;
+					$precio=$minutos*3;
 					break;
 			}
 		mostrar ($fechaEntrada , $fechaSalida , $salida, $precio, $minutos);
@@ -43,6 +43,9 @@ foreach ($patenteLista as $dato ) //el foreach es como el mientras pero de los a
 	}	
 
 }
+
+var_dump($minutos);
+
 if ($guardado=="no guardado") 
 {
 	echo "NO REGISTRADO";

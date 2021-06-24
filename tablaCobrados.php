@@ -1,1 +1,3 @@
-<h4>Cobrados</h4><table border=1><th>Patente</th><th> Ingreso</th><th> Egreso</th><th> Precio</th><tr><td>klx235</td><td>2021-06-18 21:14</td><td>2021-06-18 21:21</td><td>70</td></tr></table>
+<h4>Cobrados</h4><table border=1><th>Patente</th><th> Ingreso</th><th> Egreso</th><th> Precio</th><th> GNC</th><th> Tipo</th><tr><td>klx235</td><td>2021-06-18 21:14</td><td>2021-06-18 21:21</td><td>70</td><td>CON GNC</td><td>camioneta
+</td></tr><tr><td>pba233</td><td>2021-06-23 13:51</td><td>2021-06-23 13:56</td><td>15</td><td>CON GNC</td><td>camioneta
+</td></tr><tr><td>edn254</td><td>2021-06-18 21:14</td><td>2021-06-23 13:59</td><td>112.5</td><td>SIN GNC</td><td>moto</td></tr></table>
