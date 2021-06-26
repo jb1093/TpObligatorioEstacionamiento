@@ -155,8 +155,45 @@ function mostrar ($fechaE , $fechaS , $patente , $valor, $tiempo)//ticket
 		
 }
 
+function ticket($fechaE , $fechaS , $patente , $valor, $tiempo)
+{
+    $renglon="";
+	$renglon.="COMPROBANTE \n";
+	$renglon.="DATOS;VALORES \n";
+	$renglon.="Patente;".$patente."\n";
+	$renglon.="Fecha de ingreso;".$fechaE."\n";
+	$renglon.="Fecha Salida;".$fechaS."\n";
+	$renglon.="Tiempo de guardado;".$tiempo."\n";
+	$renglon.="Importe;".$valor."\n";
+
+	header("Content-Description: File Transfer");
+	header("Content-Type: application/force-download");
+	header("Content-Disposition: attachment; filename=ticket.csv");
+	echo $renglon;
+}
 
 
+function subirImagen($imagen)//no va
+{
+	if(isset($imagen) && $imagen!="") // se recolectan datos de la imagen
+	{
+		$tipo=$_FILES['archivo']['type'];
+		$tamano = $_FILES['archivo']['size'];
+        $temp = $_FILES['archivo']['tmp_name']; //nombre temporal
+		
+		if(!(strpos($tipo, "jepg") || strpos($tipo, "jpg") || strpos($tipo, "png") || strpos($tipo, "JEPG") || strpos($tipo, "JPG") || strpos($tipo, "PNG") )) //valido que sean esos formatos
+		{
+			echo"ERROR FORMATO NO DESEADO";
+		}else //si es correcta 
+		{
+			move_uploaded_file($temp, 'upload/'.$imagen);
+			echo"Imagen subida exitosamente"; 
+		}
+
+	}
+
+
+}
 
 
 

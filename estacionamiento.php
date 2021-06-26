@@ -41,8 +41,14 @@ class estacionamiento//metodo estático porque de la clase tengo una funcionalid
 		$tablaHTML.="<th>";
 		$tablaHTML.=" Tipo";
 		$tablaHTML.="</th>";
+		$tablaHTML.="<th>";
+		$tablaHTML.=" Usuario";
+		$tablaHTML.="</th>";
+		$tablaHTML.="<th>";
+		$tablaHTML.=" Imagen";
+		$tablaHTML.="</th>";
 		foreach ($listado as $auto) {
-			$tablaHTML.="<tr><td>$auto[0]</td><td>$auto[1]</td><td>$auto[2]</td><td>$auto[3]</td></tr>";
+			$tablaHTML.="<tr><td>$auto[0]</td><td>$auto[1]</td><td>$auto[2]</td><td>$auto[3]</td><td>$auto[4]</td><td><img src='upload/$auto[0].jpg'  width='85'></td></tr>";
 
 		}
 

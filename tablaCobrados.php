@@ -13,4 +13,6 @@
 </td></tr><tr><td>ccc222</td><td>2021-06-24 00:40</td><td>2021-06-24 01:50</td><td>210</td><td>CON GNC</td><td>camioneta
 </td></tr><tr><td>aaa333</td><td>2021-06-23 16:40</td><td>2021-06-24 01:52</td><td>1242</td><td>SIN GNC</td><td>moto
 </td></tr><tr><td>bbb333</td><td>2021-06-23 16:40</td><td>2021-06-24 01:53</td><td>1368.675</td><td>CON GNC</td><td>auto
-</td></tr><tr><td>ccc333</td><td>2021-06-23 16:40</td><td>2021-06-24 01:53</td><td>1493.1</td><td>SIN GNC</td><td>camioneta</td></tr></table>
+</td></tr><tr><td>ccc333</td><td>2021-06-23 16:40</td><td>2021-06-24 01:53</td><td>1493.1</td><td>SIN GNC</td><td>camioneta
+</td></tr><tr><td>klx235</td><td>2021-06-25 15:53</td><td>2021-06-25 18:42</td><td>464.75</td><td>CON GNC</td><td>auto
+</td></tr><tr><td>edn254</td><td>2021-06-25 15:53</td><td>2021-06-25 18:49</td><td>528</td><td>SIN GNC</td><td>camioneta</td></tr></table>

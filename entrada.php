@@ -56,17 +56,22 @@
   <a class="btn btn-outline-primary" href="login.php">Cerrar</a>
 </div>
 
-<form action="hacerEntrada.php" method="post">
+<form action="hacerEntrada.php" method="post" enctype="multipart/form-data" >
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h1 class="display-4">ENTRADA a ApparCar</h1>
     <p class="lead">Precio por minuto $2,5</p>
     <input type="text" name="txtPatente" id="txtPatente" placeholder="Ingrese Patente">
-    <input type="checkbox" name="gnc" value="gnc">GNC</input>
+   <br><br>
+      <input type="checkbox" name="gnc" value="gnc">GNC</input>
       <input type="radio" name="vehiculo" value="moto">Moto</input>
       <input type="radio" name="vehiculo" value="auto">Auto</input>
       <input type="radio" name="vehiculo" value="camioneta">Camioneta</input>
-
-    <input type="submit" name="btnEntrada" > 
+      <h4>Añadir imagen</h4>
+    <input type="file" name="archivo" id="archivo">
+    <br><br>
+    <input type="submit" name="subir" value="Enviar"> 
+    
+    <!--input type="submit" name="btnEntrada" --> 
     <a href="estacionar.php"><input type="button" name="btnVolver" value="Volver"></a>
 
     

@@ -29,7 +29,16 @@ else
 	$vehiculo="";
 	
 }
-
+if(isset($_POST['subir']))
+{
+	$archivo=$_FILES['archivo']['name'];
+	$tipo=$_FILES['archivo']['type'];
+	$tamano = $_FILES['archivo']['size'];
+    $temp = $_FILES['archivo']['tmp_name']; //nombre temporal
+	
+	move_uploaded_file($temp, 'upload/'.$entrada.".jpg");
+}
+$usuario=$_COOKIE['usuarioCookie'];
 //--------------------------------------------------------------------
 if ($entrada!="" && !($vehiculo=="moto" && $valorgnc=="gnc")) 
 {
@@ -42,8 +51,10 @@ if ($entrada!="" && !($vehiculo=="moto" && $valorgnc=="gnc"))
 		$guardaDato="SIN GNC";
 	}
 
+	
+
 	$hora=date("Y-m-d H:i");
-	$registro="\n".$entrada."=>".$hora."=>".$guardaDato."=>".$vehiculo."=>x";
+	$registro="\n".$entrada."=>".$hora."=>".$guardaDato."=>".$vehiculo."=>".$usuario."=>x";
 	
 	//funcion para guardar las patentes cuando ingresan al estacionamiento
 	guardar($registro , "patentes.txt");

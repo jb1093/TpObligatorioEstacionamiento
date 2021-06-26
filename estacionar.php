@@ -67,57 +67,28 @@
   <a href="salida.php"><input type="button" name="btnSalida" value="SALIDA" > </a>
   
 </div>
-
-
-<!--<div class="container">
-  <div class="card-deck mb-3 text-center">
-    <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Precio</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$2,5 <small class="text-muted">/ minuto</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Seguridad para vos y tu coche</li>
-          <li>El mejor precio de la zona</li>
-          <li>Email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-      </div>
-    </div>
-    <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Precio</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$2,5 <small class="text-muted">/ minuto</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Seguridad para vos y tu coche</li>
-          <li>El mejor precio de la zona</li>
-          <li>Priority email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-      </div>
-    </div>
-    <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Enterprise</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>30 users included</li>
-          <li>15 GB of storage</li>
-          <li>Phone and email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-      </div>
-    </div>
-  </div>-->
 </main>
+
+<form action="hacerEstacionar.php" method="post" enctype="multipart/form-data">
+   <div class="divForm">
+    <h4>Añadir imagen</h4>
+    <input type="file" name="archivo" id="archivo">
+    <input type="submit" name="subir" value="Subir"> 
+  
+
+  <h4> Descargar archivo </h4>
+  <a href="patentesCSV.php"> <input type="button" name="btnDescarga" value="Descargar"> </a>
+  <br><br>
+  <h4>Punto 9</h4>
+    <select name="punto9" id="cars">
+      <option value="todo">Todos</option>
+      <option value="usuario1">Julieta</option>
+      <option value="usuario2">Andrea</option>
+    </select>
+    <br><br>
+   <input type="submit" value="Cargar">
+   </div>
+</form>
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-12 col-md">

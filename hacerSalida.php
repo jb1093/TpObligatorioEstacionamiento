@@ -24,8 +24,9 @@ foreach ($patenteLista as $dato ) //el foreach es como el mientras pero de los a
 
 		$precio=cobrar($vehiculo, $minutos);
 
-		mostrar ($fechaEntrada , $fechaSalida , $salida, $precio, $minutos);
+		//mostrar ($fechaEntrada , $fechaSalida , $salida, $precio, $minutos);
 
+		ticket($fechaEntrada , $fechaSalida , $salida, $precio, $minutos);
 		
 		guardar("\n".$salida."=>".$fechaEntrada."=>".$fechaSalida."=>". $precio."=>".$gas."=>".$vehiculo,"cobrados.txt");
 		break;
