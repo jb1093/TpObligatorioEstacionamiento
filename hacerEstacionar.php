@@ -1,6 +1,6 @@
  <?php
  //https://www.jose-aguilar.com/blog/upload-de-imagenes-con-php/
- include "estacionamiento.php";
+/* include "estacionamiento.php";
 if (isset($_POST['subir'])) 
 {
 	$archivo=$_FILES['archivo']['name']; //pasarle un argumento para que funcione
@@ -15,27 +15,28 @@ if (isset($_POST['subir']))
 		{
 			echo"ERROR FORMATO NO DESEADO";
 		}else //si es correcta 
-		{*/
+		{/
 			move_uploaded_file($temp, 'upload/'.$archivo);
 			echo"Imagen subida exitosamente"; 
 		//}
 
-	}
+	}*/
 
 	//subirImagen($archivo);
-
+	include "estacionamiento.php";
 	if(isset($_POST['punto9'])){
 		$mostrar=$_POST['punto9'];
+
 	}else
 	{
-		die();
+		//die();
 	}
 
-	if($mostrar=="todo")
-	{
-		estacionamiento::CrearTablaEstacionamiento();
+
+	
+		estacionamiento::CrearTablaEstacionamiento($mostrar);
 		include "tablaEstacionados.php";
-	}
+	
 
-} 
+
 ?>

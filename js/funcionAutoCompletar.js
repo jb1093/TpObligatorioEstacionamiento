@@ -3,7 +3,7 @@ $(function(){
 
 			  
 
-			   "edn254","lkm365","abc123","ttt555","kmi789","rrr111","klx235","rrr888",
+			   "edn254","lkm365","abc123","ttt555","kmi789","rrr111","klx235","rrr888","hol963",
 
 
 			  ];

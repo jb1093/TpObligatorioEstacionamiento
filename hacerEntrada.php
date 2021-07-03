@@ -59,7 +59,7 @@ if ($entrada!="" && !($vehiculo=="moto" && $valorgnc=="gnc"))
 	//funcion para guardar las patentes cuando ingresan al estacionamiento
 	guardar($registro , "patentes.txt");
 	echo "Registro guardado exitosamente!";
-	estacionamiento::CrearTablaEstacionamiento();
+	estacionamiento::CrearTablaEstacionamiento("todo");
 	estacionamiento::CrearTablaCobrados();
 	include "generarautocompletar.php";
 	

@@ -50,7 +50,7 @@
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm" >
   <h5 class="my-0 mr-md-auto font-weight-normal">INICIO</h5>
   <nav class="my-2 my-md-0 mr-md-3">
-    <a class="p-2" href="#">Features</a>
+    <a class="p-2" href="WebCam-master/webcam.php">Tomar Foto</a>
     <a class="p-2" href="#">Enterprise</a>
     <a class="p-2" href="#">Support</a>
     <a class="p-2" href="#">Pricing</a>
@@ -80,10 +80,20 @@
   <a href="patentesCSV.php"> <input type="button" name="btnDescarga" value="Descargar"> </a>
   <br><br>
   <h4>Punto 9</h4>
+  <?php
+    include "estacionamiento.php";
+    $listaUsuarios=leerArchivo("usuariosLogin.txt");
+  ?>
     <select name="punto9" id="cars">
       <option value="todo">Todos</option>
-      <option value="usuario1">Julieta</option>
-      <option value="usuario2">Andrea</option>
+      <?php
+        foreach ($listaUsuarios as $dato ) 
+        {?>
+            <option value="<?php echo $dato[0];?>"><?php echo $dato[0]; ?></option>    
+
+        <?php 
+        }
+        ?>
     </select>
     <br><br>
    <input type="submit" value="Cargar">
