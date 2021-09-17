@@ -61,12 +61,7 @@
     <h1 class="display-4">ENTRADA a ApparCar</h1>
     <p class="lead">Precio por minuto $2,5</p>
     <input type="text" name="txtPatente" id="txtPatente" placeholder="Ingrese Patente">
-   <br>
-    <?php 
-    include_once("MensajeDeError.php");
-
-    ?> 
-   <br>
+   <br><br>
       <input type="checkbox" name="gnc" value="gnc">GNC</input>
       <input type="radio" name="vehiculo" value="moto">Moto</input>
       <input type="radio" name="vehiculo" value="auto">Auto</input>
