@@ -55,6 +55,9 @@
       <li class="nav-item active">
         <a class="nav-link" href="login.php">Login <span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="VehiculoAlta.php">Alta vehiculo <span class="sr-only">(current)</span></a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="error.php">Testing error</a>
       </li>

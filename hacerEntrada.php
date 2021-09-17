@@ -1,5 +1,10 @@
 <?php
 include_once "estacionamiento.php";
+include_once ("AccesoDatos.php");	
+include_once ("Vehiculo.php");
+include_once ("Usuario.php");
+include_once("Estacionado.php");
+
 //date_default_timezone_set("America/Argentina/Buenos_Aires");
 if(isset($_POST['txtPatente']))
 {
@@ -51,50 +56,23 @@ if ($entrada!="" && !($vehiculo=="moto" && $valorgnc=="gnc"))
 		$guardaDato="SIN GNC";
 	}
 
-	
+	$idVehiculo=Vehiculo::DameIdDeEstaPatente($entrada);
+	$idUsuario=Usuario::DameIdDeEsteMail($usuario);
 
-	$hora=date("Y-m-d H:i");
-	$registro="\n".$entrada."=>".$hora."=>".$guardaDato."=>".$vehiculo."=>".$usuario."=>x";
-	
-	//funcion para guardar las patentes cuando ingresan al estacionamiento
-	guardar($registro , "patentes.txt");
-	echo "Registro guardado exitosamente!";
-	estacionamiento::CrearTablaEstacionamiento("todo");
-	estacionamiento::CrearTablaCobrados();
-	include "generarautocompletar.php";
+	if(Estacionado::ValidarVehiculoYaEstacionado($idVehiculo)==0 ){
+		$fechaIngreso= date("Y-m-d H:i");
+		$unEstacionado=Estacionado::DameUnEstacionado($idUsuario,$idVehiculo, $fechaIngreso, "", 0);
+		$UltimoId=$unEstacionado->InsertarUnoParametros();
+		echo "Registro guardado exitosamente!";
+		estacionamiento::CrearTablaEstacionamiento("todo");
+		estacionamiento::CrearTablaCobrados();
+		include "generarautocompletar.php";
+
+	}else{
+		header("Location: entrada.php?error=El vehiculo $entrada ya se encuentra estacionado, no se puede volver a cargar!!!");
+
+	}
 	
 }
-else
-{
-	echo "ERROR AL CARGAR";
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ?>

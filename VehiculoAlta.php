@@ -56,21 +56,21 @@
   <a class="btn btn-outline-primary" href="login.php">Cerrar</a>
 </div>
 
-<form action="hacerEntrada.php" method="post" enctype="multipart/form-data" >
+<form action="VehiculoAltaHacer.php" method="post" enctype="multipart/form-data" >
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">ENTRADA a ApparCar</h1>
+    <h1 class="display-4">ALTA DE VEHICULOS a ApparCar</h1>
     <p class="lead">Precio por minuto $2,5</p>
     <input type="text" name="txtPatente" id="txtPatente" placeholder="Ingrese Patente">
-   <br>
-    <?php 
-    include_once("MensajeDeError.php");
-
-    ?> 
-   <br>
+   <br><br>
       <input type="checkbox" name="gnc" value="gnc">GNC</input>
       <input type="radio" name="vehiculo" value="moto">Moto</input>
       <input type="radio" name="vehiculo" value="auto">Auto</input>
       <input type="radio" name="vehiculo" value="camioneta">Camioneta</input>
+    <br>
+      <input type="radio" name="color" value="rojo">Rojo</input>
+      <input type="radio" name="color" value="negro">Negro</input>
+      <input type="radio" name="color" value="blanco">Blanco</input>
+      
       <h4>Añadir imagen</h4>
     <input type="file" name="archivo" id="archivo">
     <br><br>
